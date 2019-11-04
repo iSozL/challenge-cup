@@ -13,7 +13,7 @@ class IndexPhoto extends React.Component {
     return (
       <Carousel autoplay dotPosition="top">
         {photoArray.map((item, index) => (
-          <img key={index} src={item.name} class="img-height" />
+          <img key={index} src={item.name} className="img-height" />
         )
         )}
       </Carousel>
