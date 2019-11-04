@@ -8,7 +8,8 @@
 }
 .tags {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .tag-container {
   display: flex;
@@ -19,7 +20,7 @@
   margin-left: 10px;
 }
 .express {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
 }
