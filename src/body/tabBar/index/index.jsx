@@ -5,7 +5,7 @@ import New from './new/index'
 class Index extends React.Component {
   render() {
     return(
-      <div>
+      <div className="index-container">
         <HeaderBar />
         <Promotion />
         <New />

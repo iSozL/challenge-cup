@@ -1,5 +1,6 @@
 .promotion-container {
-  margin-top: 30px;
+  margin-top: 20px;
+  background: #ffffff;
 }
 .promotion-slogan {
   font-weight: thin;
@@ -7,9 +8,14 @@
   margin-left: 10px;
   color: #999999
 }
+.promotion-title {
+  margin: 0 0 10px 10px;
+  padding-top: 10px
+}
 .img-container {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px 20px 10px;
 }
 img {
   width: 250px;

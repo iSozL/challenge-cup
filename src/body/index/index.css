@@ -1,5 +1,5 @@
 .body {
-  background: #f8f8f8;
+  background: #f0ecec;
 }
 .white-block {
   height: 20px;
@@ -11,9 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 10px;
 }
 .tab-width {
   width: 80%;
   margin: 0 auto;
-  background: #ffffff;
 }
