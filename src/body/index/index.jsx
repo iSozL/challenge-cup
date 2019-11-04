@@ -13,7 +13,7 @@ class Body extends React.Component {
           <SearchBar />
           <KeyWords />
         </div>
-        <div class="tab-width">
+        <div className="tab-width">
           <TabBar />
         </div>
       </div>

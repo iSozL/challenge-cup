@@ -2,3 +2,13 @@
   width: 80%;
   margin: 0 auto;
 }
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+  height: 40px;
+  color: #3dc6b6;
+  background: #fff;
+  border-color: #e8e8e8;
+  border-bottom: 1px solid #fff;
+}
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: #3dc6b6
+}

@@ -1,20 +1,25 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import NavigatorBar from './navigatorBar'
+import IndexPhoto from './indexPhoto'
+import SiderPhoto from './siderPhoto'
+import { Layout } from 'antd';
+
+const { Sider, Content } = Layout;
 class HeaderBar extends React.Component {
   render() {
     return (
-      <Row>
-        <Col span={3}>
+      <Layout>
+        <Sider width={150}>
           <NavigatorBar />
-        </Col>
-        <Col span={4}>
-          2
-        </Col>
-        <Col span={4}>
-          3
-        </Col>
-      </Row>
+        </Sider>
+        <Content>
+          <IndexPhoto />
+        </Content>
+        <Sider width={270}>
+          <SiderPhoto />
+        </Sider>
+      </Layout>
     )
   }
 }
