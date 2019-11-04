@@ -1,3 +1,37 @@
 .footer-container {
-  
+  display: flex;
+  justify-content: center;
+}
+.footer-width {
+  justify-content: space-between;
+  width: 80%;
+}
+.tags {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.tag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-slogan {
+  margin-left: 10px;
+}
+.express {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.express-module {
+  width: 140px;
+  border-right: 2px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.code {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
 }
