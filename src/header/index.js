@@ -14,7 +14,8 @@ function Header() {
           ))}
         </Row>
       </div>
-      <Divider />
+      <div className="clearFloat"></div>
+      <Divider className="test" />
     </div>
   );
 }
