@@ -1,6 +1,9 @@
 .body {
   background: #f8f8f8;
 }
+.white-block {
+  height: 20px;
+}
 .header {
   width: 80%;
   margin: 0 auto;
