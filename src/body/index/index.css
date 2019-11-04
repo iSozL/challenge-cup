@@ -12,3 +12,8 @@
   flex-direction: column;
   justify-content: center;
 }
+.tab-width {
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+}

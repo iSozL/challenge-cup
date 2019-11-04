@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "antd";
 import './index.css'
+import Index from './index/index'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -25,10 +26,12 @@ class TabBar extends React.Component {
       }
     ]
     return (
-      <div className="container">
-        <Tabs defaultActiveKey="1" tabBarGutter={3} tabBarStyle={{color: '#3bc6b6'}}>
+      <div className="container1" className="tab">
+        <Tabs defaultActiveKey="1" tabBarGutter={3} tabBarStyle={{color: '#3bc6b6'}} type="card">
           { data.map((item, index) => (
-            <TabPane tab={item.name} key={index + 1}  style={{ fontWeight: 'bold' }} />
+            <TabPane tab={item.name} key={index + 1}  style={{ fontWeight: 'bold' }}>
+              <Index />
+            </TabPane>
             ))
           }
         </Tabs>
