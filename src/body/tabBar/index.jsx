@@ -2,15 +2,18 @@ import React from "react";
 import { Tabs } from "antd";
 import "./index.css";
 import Index from "./index/index";
+import Introduction from './businessIntroduction/Introduction'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
     const data = [
       {
-        name: "首页"
+        name: "首页",
+        jsx: <Index />
       },
       {
-        name: "商家介绍"
+        name: "商家介绍",
+        jsx: <Introduction />
       },
       {
         name: "活动专区"
@@ -34,7 +37,7 @@ class TabBar extends React.Component {
               key={index + 1}
               style={{ fontWeight: "bold" }}
             >
-              <Index />
+              {item.jsx}
             </TabPane>
           ))}
         </Tabs>

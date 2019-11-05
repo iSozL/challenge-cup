@@ -1,0 +1,12 @@
+.ant-card-meta-title {
+  overflow: hidden;
+  color: orange;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.promote-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
