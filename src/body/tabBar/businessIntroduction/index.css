@@ -19,3 +19,7 @@
   display: flex;
   justify-content: start;
 }
+.options {
+  border-left: 1px solid #000000;
+  padding: 0 10px 0 10px
+}

@@ -12,16 +12,26 @@ class Options extends React.Component {
       "医疗器械",
       "仪器租赁"
     ];
+    const shopData = [
+      "普通店铺",
+      "专营店铺",
+      "旗舰店铺"
+    ]
     return (
       <Card>
         <div className="options-container">
-          <div style={{color: "#e8e8e8", paddingRight: "20px"}}>分类</div>
+          <div style={{color: "gray", paddingRight: "20px"}}>分类</div>
           {categoryData.map((item, index) => (
-            <div key={index}>{item}</div>
+            <div key={index} className="options">{item}</div>
           ))}
         </div>
         <Divider />
-        <div>tamsl</div>
+        <div className="options-container">
+          <div style={{color: "gray", paddingRight: "20px"}}>店铺</div>
+          {shopData.map((item, index) => (
+            <div key={index} className="options">{item}</div>
+          ))}
+        </div>
       </Card>
     );
   }
