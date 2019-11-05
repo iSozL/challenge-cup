@@ -1,9 +1,75 @@
 import React from "react";
-import { Tabs } from "antd";
+import { Tabs, Pagination, Table, Tag, Divider } from "antd";
 import "./shopTabs.css"
 import ShopContainer from '../../../../components/shopContainer/index'
 const { TabPane } = Tabs;
 class ShopTabs extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      shops: [
+        {
+          key: '1',
+          name: '江西XX有限公司',
+          introduction: '无',
+          manager: '小明',
+          company: '江西南昌',
+          success: '6',
+          rate: '98%',
+        },
+        {
+          key: '2',
+          name: '江西XX有限公司',
+          introduction: '无',
+          manager: '小明',
+          company: '江西南昌',
+          success: '6',
+          rate: '98%',
+        },
+        {
+          key: '3',
+          name: '江西XX有限公司',
+          introduction: '无',
+          manager: '小明',
+          company: '江西南昌',
+          success: '6',
+          rate: '98%',
+        },
+        {
+          key: '4',
+          name: '江西XX有限公司',
+          introduction: '无',
+          manager: '小明',
+          company: '江西南昌',
+          success: '6',
+          rate: '98%',
+        },
+        {
+          key: '5',
+          name: '江西XX有限公司',
+          introduction: '无',
+          manager: '小明',
+          company: '江西南昌',
+          success: '6',
+          rate: '98%',
+        }
+      ],
+      showShops: []
+    }
+    this.getIndex = this.getIndex.bind(this)
+  }
+  getIndex(e) {
+    const x = 3 // 显示个数
+    const datas = this.state.shops.slice((e - 1) * x, e * x)
+    this.setState({
+      showShops: datas
+    })
+  }
+  componentDidMount(){
+    this.setState({
+      showShops: this.state.shops.slice(0, 3)
+    })
+  }
   render() {
     const shopData = [
       {
@@ -42,7 +108,9 @@ class ShopTabs extends React.Component {
                 {
                   rankData.map((item, index) => (
                     <TabPane tab={item.name} key={index + 1}>
-                      <ShopContainer />
+                      <ShopContainer shops={this.state.showShops} />
+                      <Pagination defaultCurrent={1} total={this.state.shops.length} pageSize={3} onChange={(e) => this.getIndex(e)}>
+                      </Pagination>
                     </TabPane>
                   ))
                 }
