@@ -10,3 +10,12 @@
   display: flex;
   justify-content: space-between;
 }
+.ant-layout-header {
+  background: #f0ecec;
+  padding: 0;
+  height: auto;
+}
+.options-container {
+  display: flex;
+  justify-content: start;
+}

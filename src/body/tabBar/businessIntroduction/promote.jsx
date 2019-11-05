@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Icon } from "antd";
+import { Card, Icon} from "antd";
 import "./index.css";
 const { Meta } = Card;
 function Promote() {
