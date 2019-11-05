@@ -78,7 +78,7 @@ function Footer() {
             <div>周一至周日9：00~14：00</div>
           </div>
           <div className="express-module">
-            <img className="code" src="https://s1.meituan.net/bs/fe-web-meituan/60ac9a0/img/download-qr.png" />
+            <img alt="failed" className="code" src="https://s1.meituan.net/bs/fe-web-meituan/60ac9a0/img/download-qr.png" />
             <div>扫码关注享更多优惠</div>
           </div>
         </div>

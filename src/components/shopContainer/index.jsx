@@ -1,46 +1,8 @@
 import React from "react";
-import { Card, Icon, Button, Divider, Table, Tag } from "antd";
+import { Card, Icon, Button, Divider, Table } from "antd";
 import "./index.css";
 class ShopContainer extends React.Component {
   render() {
-    const columns = [
-      {
-        title: "热销产品",
-        dataIndex: "热销产品",
-        key: "name",
-        render: text => <a>{text}</a>
-      },
-      {
-        title: "售价",
-        dataIndex: "售价",
-        key: "age"
-      },
-      {
-        title: "交易次数",
-        dataIndex: "交易次数",
-        key: "address"
-      },
-      {
-        title: "评价",
-        key: "评价",
-        dataIndex: "tags",
-        render: tags => (
-          <span>
-            {tags.map(tag => {
-              let color = tag.length > 5 ? "geekblue" : "green";
-              if (tag === "loser") {
-                color = "volcano";
-              }
-              return (
-                <Tag color={color} key={tag}>
-                  {tag.toUpperCase()}
-                </Tag>
-              );
-            })}
-          </span>
-        )
-      }
-    ];
     return (
       <div>
         {this.props.shops.map((item, index) => (
@@ -82,7 +44,7 @@ class ShopContainer extends React.Component {
             </div>
             <Divider style={{ marginBottom: 0 }} />
             <div>
-              <Table columns={columns} />
+              <Table />
             </div>
           </Card>
         ))}

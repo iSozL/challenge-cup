@@ -1,5 +1,4 @@
 import React from 'react'
-import { Row, Col } from 'antd'
 import NavigatorBar from './navigatorBar'
 import IndexPhoto from './indexPhoto'
 import SiderPhoto from './siderPhoto'

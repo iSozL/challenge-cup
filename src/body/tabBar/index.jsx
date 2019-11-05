@@ -29,7 +29,7 @@ class TabBar extends React.Component {
       }
     ];
     return (
-      <div className="container1" className="tab">
+      <div className="tab">
         <Tabs defaultActiveKey="1" tabBarGutter={3} type="card">
           {data.map((item, index) => (
             <TabPane

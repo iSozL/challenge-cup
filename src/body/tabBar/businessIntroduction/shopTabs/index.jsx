@@ -1,5 +1,5 @@
 import React from "react";
-import { Tabs, Pagination, Table, Tag, Divider } from "antd";
+import { Tabs, Pagination } from "antd";
 import "./shopTabs.css"
 import ShopContainer from '../../../../components/shopContainer/index'
 const { TabPane } = Tabs;

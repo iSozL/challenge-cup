@@ -7,7 +7,7 @@ class PhotoList extends React.Component {
         <div className="promotion-title">{this.props.name}<span className="promotion-slogan">{this.props.slogan}</span></div>
         <div className="img-container">
           {this.props.photoList.map((item, index) => (
-            <img key={index} src={item.name} />
+            <img key={index} src={item.name} alt="failed" />
           ))}
         </div>
       </div>

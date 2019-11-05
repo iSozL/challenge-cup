@@ -38,6 +38,7 @@ class Recommend extends React.Component {
         <img
           src={require("../../../assets/images/recommend1.png")}
           style={{ width: "auto" }}
+          alt="failed"
         />
         <div style={{ fontWeight: "bold", margin: "10px 0 5px 0" }}>
           立即预约,最快三分钟响应

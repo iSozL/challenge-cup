@@ -17,7 +17,7 @@
 }
 .options-container {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .options {
   border-left: 1px solid #000000;

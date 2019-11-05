@@ -4,7 +4,7 @@ class Record extends React.Component {
   render() {
     return(
       <div className="record-container">
-        <div class="vline-box">
+        <div className="vline-box">
           <span>关于我们</span>
           <span>联系我们</span>
           <span>联系客服</span>
