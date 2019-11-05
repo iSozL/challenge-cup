@@ -54,12 +54,13 @@ class ShopTabs extends React.Component {
           rate: '98%',
         }
       ],
-      showShops: []
+      showShops: [],
+      size: 3
     }
     this.getIndex = this.getIndex.bind(this)
   }
   getIndex(e) {
-    const x = 3 // 显示个数
+    const x = this.state.size
     const datas = this.state.shops.slice((e - 1) * x, e * x)
     this.setState({
       showShops: datas
@@ -67,7 +68,7 @@ class ShopTabs extends React.Component {
   }
   componentDidMount(){
     this.setState({
-      showShops: this.state.shops.slice(0, 3)
+      showShops: this.state.shops.slice(0, this.state.size)
     })
   }
   render() {
@@ -109,7 +110,7 @@ class ShopTabs extends React.Component {
                   rankData.map((item, index) => (
                     <TabPane tab={item.name} key={index + 1}>
                       <ShopContainer shops={this.state.showShops} />
-                      <Pagination defaultCurrent={1} total={this.state.shops.length} pageSize={3} onChange={(e) => this.getIndex(e)}>
+                      <Pagination defaultCurrent={1} total={this.state.shops.length} pageSize={this.state.size} onChange={(e) => this.getIndex(e)}>
                       </Pagination>
                     </TabPane>
                   ))
