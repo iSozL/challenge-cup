@@ -2,30 +2,25 @@ import React from "react";
 import { Card, Icon } from "antd";
 import "./index.css";
 const { Meta } = Card;
-function Promote() {
+function PromoteFooter() {
   const promoteData = [
     {
-      img: require("../../../assets/images/1.png"),
+      img: require("../../../assets/images/2.png"),
       title: "江西某某有限公司",
       company: "公司 江西南昌"
     },
     {
-      img: require("../../../assets/images/1.png"),
+      img: require("../../../assets/images/2.png"),
       title: "江西某某有限公司",
       company: "公司 江西南昌"
     },
     {
-      img: require("../../../assets/images/1.png"),
+      img: require("../../../assets/images/2.png"),
       title: "江西某某有限公司",
       company: "公司 江西南昌"
     },
     {
-      img: require("../../../assets/images/1.png"),
-      title: "江西某某有限公司",
-      company: "公司 江西南昌"
-    },
-    {
-      img: require("../../../assets/images/1.png"),
+      img: require("../../../assets/images/2.png"),
       title: "江西某某有限公司",
       company: "公司 江西南昌"
     }
@@ -41,9 +36,8 @@ function Promote() {
           alignItems: "center"
         }}
       >
-        <Icon type="like" style={{ fontSize: "40px", marginBottom: "20px" }} />
-        <div>设绘文化</div>
-        <div>专业优选</div>
+        <Icon type="bulb" style={{ fontSize: "40px", marginBottom: "20px" }} />
+        <div>精彩推荐</div>
       </Card>
       {promoteData.map((item, index) => (
         <Card
@@ -57,4 +51,4 @@ function Promote() {
     </div>
   );
 }
-export default Promote;
+export default PromoteFooter;

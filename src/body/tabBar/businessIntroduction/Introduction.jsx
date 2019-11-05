@@ -3,6 +3,8 @@ import Promote from "./promote";
 import { Layout } from "antd";
 import Options from './options'
 import ShopTabs from './shopTabs/index'
+import Recommend from './recommend'
+import PromoteFooter from "./promoteFooter";
 const { Header, Footer, Sider, Content } = Layout;
 class Introduction extends React.Component {
   render() {
@@ -17,9 +19,13 @@ class Introduction extends React.Component {
             <Content>
               <ShopTabs />
             </Content>
-            <Footer>Footer</Footer>
+            <Footer>
+              <PromoteFooter />
+            </Footer>
           </Layout>
-          <Sider style={{marginTop: "20px"}}>Sider</Sider>
+          <Sider style={{marginTop: "20px", background: '#f0f2f5'}}>
+            <Recommend />
+          </Sider>
         </Layout>
       </div>
     );
