@@ -2,6 +2,7 @@ import React from "react";
 import Promote from "./promote";
 import { Layout } from "antd";
 import Options from './options'
+import ShopTabs from './shopTabs/index'
 const { Header, Footer, Sider, Content } = Layout;
 class Introduction extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class Introduction extends React.Component {
             <Header style={{marginTop: "20px"}}>
               <Options />
             </Header>
-            <Content>Content</Content>
+            <Content>
+              <ShopTabs />
+            </Content>
             <Footer>Footer</Footer>
           </Layout>
           <Sider style={{marginTop: "20px"}}>Sider</Sider>

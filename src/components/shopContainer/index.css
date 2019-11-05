@@ -1,0 +1,22 @@
+.shopName {
+  margin-left: 10px;
+  color: orange;
+  font-size: 18px;
+}
+.shopDetail span {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 13px;
+  color: gray
+}
+.shopDetail {
+  font-size: 13px;
+  color: gray
+}
+.company-introduct {
+  display: flex;
+  justify-content: space-between;
+}
+.company-detail {
+  padding-left: 80px;
+}

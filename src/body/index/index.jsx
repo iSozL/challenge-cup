@@ -4,7 +4,6 @@ import SearchBar from '../../components/search/index'
 import KeyWords from '../keyWords/index'
 import TabBar from '../tabBar/index'
 import Footer from '../../footer/index'
-import { Divider } from 'rc-menu'
 class Body extends React.Component {
   render() {
     return (
