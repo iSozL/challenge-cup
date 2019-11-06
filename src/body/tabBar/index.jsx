@@ -3,6 +3,7 @@ import { Tabs } from "antd";
 import "./index.css";
 import Index from "./index/index";
 import Introduction from './businessIntroduction/Introduction'
+import Scientice from './scientificResearch/index'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -19,7 +20,8 @@ class TabBar extends React.Component {
         name: "活动专区"
       },
       {
-        name: "科研专区"
+        name: "科研专区",
+        jsx: <Scientice />
       },
       {
         name: "实验室招聘"
