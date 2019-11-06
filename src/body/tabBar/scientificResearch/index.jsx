@@ -10,36 +10,36 @@ class Scientice extends React.Component {
   render() {
     const testData = [
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
       },
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
       },
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
       },
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
       },
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
       },
       {
-        img: require('../../../assets/images/promotion4.png'),
-        title: 'XXXXX',
-        description: 'xxxxxxxx'
-      },
-    ]
+        img: require("../../../assets/images/promotion4.png"),
+        title: "XXXXX",
+        description: "xxxxxxxx"
+      }
+    ];
     return (
       <div>
         <Layout>
@@ -78,6 +78,42 @@ class Scientice extends React.Component {
               <Meta title={item.title} description={item.description} />
             </Card>
           ))}
+        </CardContainer>
+        <CardContainer name="科研快讯">
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+        </CardContainer>
+        <CardContainer name="科研专题">
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
+          <Card
+            hoverable
+            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
+          ></Card>
         </CardContainer>
       </div>
     );
