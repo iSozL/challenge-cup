@@ -67,12 +67,12 @@ class Scientice extends React.Component {
             </div>
           </div>
         </Card>
-        <CardContainer name="常见科学实验" flexType="space-around">
+        <CardContainer name="常见科学实验" flexType="flex-start">
           {testData.map((item, index) => (
             <Card
               key={index}
               hoverable
-              style={{ width: 240, marginTop: "20px" }}
+              style={{ width: 240, margin: "20px 20px 0 20px" }}
               cover={<img alt="example" src={item.img} />}
             >
               <Meta title={item.title} description={item.description} />
