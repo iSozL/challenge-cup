@@ -6,23 +6,28 @@ function Footer() {
   const tagsData = [
     {
       name: "正品保障",
-      slogan: "正品保障, 提供发票"
+      slogan: "正品保障, 提供发票",
+      icon: "safety"
     },
     {
       name: "优惠价格",
-      slogan: "超低平台价, 低于市场价"
+      slogan: "超低平台价, 低于市场价",
+      icon: "pay-circle"
     },
     {
       name: "极速物流",
-      slogan: "如约发货, 极速送达"
+      slogan: "如约发货, 极速送达",
+      icon: "thunderbolt"
     },
     {
       name: "售后无忧",
-      slogan: "退货无忧, 一对一沟通"
+      slogan: "退货无忧, 一对一沟通",
+      icon: "like"
     },
     {
       name: "特色服务",
-      slogan: "私人定制, 品牌策划"
+      slogan: "私人定制, 品牌策划",
+      icon: "star"
     }
   ];
   const expressData = [
@@ -51,7 +56,7 @@ function Footer() {
           {tagsData.map(
             (item,index) => (
               <div className="tag-container" key={index}>
-                <Icon type="check-circle" style={{ fontSize: "40px" }} />
+                <Icon type={item.icon} style={{ fontSize: "40px", color: "orange" }} />
                 <div className="tag-title">
                   <div className="tags">{item.name}</div>
                   <div className="tag-slogan">{item.slogan}</div>
