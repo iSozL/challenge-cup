@@ -45,3 +45,12 @@
   font-size: 14px;
   background: #f0f2f5;
 }
+.advertise-container {
+  margin-top: 20px;
+  height: 80px;
+  border-radius: 8px;
+  background: rgb(213, 211, 213);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

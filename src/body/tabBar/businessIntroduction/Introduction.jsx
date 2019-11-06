@@ -5,6 +5,7 @@ import Options from './options'
 import ShopTabs from './shopTabs/index'
 import Recommend from './recommend'
 import PromoteFooter from "./promoteFooter";
+import Advertise from "./advertise"
 const { Header, Footer, Sider, Content } = Layout;
 class Introduction extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class Introduction extends React.Component {
             <Recommend />
           </Sider>
         </Layout>
+        <Advertise />
       </div>
     );
   }

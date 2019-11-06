@@ -14,16 +14,6 @@ class Recommend extends React.Component {
         img: require("../../../assets/images/1.png"),
         title: "江西某某有限公司",
         company: "公司 江西南昌"
-      },
-      {
-        img: require("../../../assets/images/1.png"),
-        title: "江西某某有限公司",
-        company: "公司 江西南昌"
-      },
-      {
-        img: require("../../../assets/images/1.png"),
-        title: "江西某某有限公司",
-        company: "公司 江西南昌"
       }
     ];
     return (
