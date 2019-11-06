@@ -6,6 +6,7 @@ import ShopTabs from './shopTabs/index'
 import Recommend from './recommend'
 import PromoteFooter from "./promoteFooter";
 import Advertise from "./advertise"
+import KingShop from "./kingShop"
 const { Header, Footer, Sider, Content } = Layout;
 class Introduction extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class Introduction extends React.Component {
           </Sider>
         </Layout>
         <Advertise />
+        <KingShop />
       </div>
     );
   }
