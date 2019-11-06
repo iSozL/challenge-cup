@@ -4,7 +4,7 @@ import "./index.css";
 function Header() {
   const func = ["登录", "注册", "个人中心"];
   return (
-    <div>
+    <div style={{background: "#3dc6b6"}}>
       <div className="function">
         <Row gutter={22}>
           {func.map((item, index) => (
