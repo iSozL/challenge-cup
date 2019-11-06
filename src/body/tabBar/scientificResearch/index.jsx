@@ -67,7 +67,7 @@ class Scientice extends React.Component {
             </div>
           </div>
         </Card>
-        <CardContainer name="常见科学实验">
+        <CardContainer name="常见科学实验" flexType="space-around">
           {testData.map((item, index) => (
             <Card
               key={index}
@@ -79,7 +79,7 @@ class Scientice extends React.Component {
             </Card>
           ))}
         </CardContainer>
-        <CardContainer name="科研快讯">
+        <CardContainer name="科研快讯" flexType="space-around">
           <Card
             hoverable
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
@@ -97,7 +97,7 @@ class Scientice extends React.Component {
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
           ></Card>
         </CardContainer>
-        <CardContainer name="科研专题">
+        <CardContainer name="科研专题" flexType="space-around">
           <Card
             hoverable
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}

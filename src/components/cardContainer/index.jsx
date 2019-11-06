@@ -18,7 +18,7 @@ class CardContainer extends React.Component {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-around",
+              justifyContent: this.props.flexType,
               flexWrap: "wrap"
             }}
           >
