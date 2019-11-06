@@ -7,7 +7,6 @@ import Recommend from './recommend'
 import PromoteFooter from "./promoteFooter";
 import Advertise from "./advertise"
 import KingShop from "./kingShop"
-import Limit from "./limit"
 const { Header, Footer, Sider, Content } = Layout;
 class Introduction extends React.Component {
   render() {
@@ -32,7 +31,6 @@ class Introduction extends React.Component {
         </Layout>
         <Advertise />
         <KingShop />
-        <Limit />
       </div>
     );
   }

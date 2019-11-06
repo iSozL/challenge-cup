@@ -6,6 +6,7 @@ import Introduction from './businessIntroduction/Introduction'
 import Scientice from './scientificResearch/index'
 import Recruitment from './recruitment/index'
 import Forum from './forum/index'
+import Activities from './activities/index'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -19,7 +20,8 @@ class TabBar extends React.Component {
         jsx: <Introduction />
       },
       {
-        name: "活动专区"
+        name: "活动专区",
+        jsx: <Activities />
       },
       {
         name: "科研专区",
