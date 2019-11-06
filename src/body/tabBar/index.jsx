@@ -5,6 +5,7 @@ import Index from "./index/index";
 import Introduction from './businessIntroduction/Introduction'
 import Scientice from './scientificResearch/index'
 import Recruitment from './recruitment/index'
+import Forum from './forum/index'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -29,7 +30,8 @@ class TabBar extends React.Component {
         jsx: <Recruitment />
       },
       {
-        name: "论坛"
+        name: "论坛",
+        jsx: <Forum />
       }
     ];
     return (
