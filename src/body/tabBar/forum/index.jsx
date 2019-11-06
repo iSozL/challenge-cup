@@ -3,6 +3,7 @@ import { Tabs } from "antd";
 import Care from './care'
 import Hot from './hot'
 import Recommend from './recommend'
+import SendPost from './sendPost'
 const { TabPane } = Tabs;
 class Forum extends React.Component {
   render() {
@@ -25,6 +26,7 @@ class Forum extends React.Component {
         {forumData.map((item, index)=> (
           <TabPane tab={item.name} key={index + 1}>
             {item.jsx}
+            <SendPost />
           </TabPane>
         ))}
       </Tabs>
