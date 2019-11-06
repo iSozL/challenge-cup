@@ -8,7 +8,8 @@ function ProductDetail() {
         display: "flex",
         justifyContent: "center",
         marginTop: "20px",
-        width: "160px"
+        width: "160px",
+        border: "1px solid gray"
       }}
     >
       <img
