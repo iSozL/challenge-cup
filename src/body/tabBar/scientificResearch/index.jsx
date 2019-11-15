@@ -13,32 +13,32 @@ class Scientice extends React.Component {
     ];
     const testData = [
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy1.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       },
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy2.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       },
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy3.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       },
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy4.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       },
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy5.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       },
       {
-        img: require("../../../assets/images/promotion4.png"),
+        img: require("../../../assets/images/sy6.png"),
         title: "XXXXX",
         description: "xxxxxxxx"
       }
@@ -82,7 +82,7 @@ class Scientice extends React.Component {
             </div>
           </div>
         </Card>
-        <CardContainer name="常见科学实验" flexType="flex-start">
+        <CardContainer name="常见科学实验" flexType="space-around">
           {testData.map((item, index) => (
             <Card
               key={index}
