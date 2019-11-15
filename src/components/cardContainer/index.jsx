@@ -19,7 +19,8 @@ class CardContainer extends React.Component {
             style={{
               display: "flex",
               justifyContent: this.props.flexType,
-              flexWrap: "wrap"
+              flexWrap: "wrap",
+              width: "100%"
             }}
           >
             {this.props.children}

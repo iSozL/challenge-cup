@@ -8,9 +8,7 @@ const { Meta } = Card;
 const { Sider, Content } = Layout;
 class Scientice extends React.Component {
   render() {
-    const photoArray = [
-      {name: require("../../../assets/images/s1.png")},
-    ];
+    const photoArray = [{ name: require("../../../assets/images/s1.png") }];
     const testData = [
       {
         img: require("../../../assets/images/sy1.png"),
@@ -46,15 +44,15 @@ class Scientice extends React.Component {
 
     const siderPhoto = [
       {
-        name: require('../../../assets/images/s2.png')
+        name: require("../../../assets/images/s2.png")
       },
       {
-        name: require('../../../assets/images/s3.png')
+        name: require("../../../assets/images/s3.png")
       },
       {
-        name: require('../../../assets/images/s4.png')
+        name: require("../../../assets/images/s4.png")
       }
-    ]
+    ];
     return (
       <div>
         <Layout>
@@ -82,7 +80,7 @@ class Scientice extends React.Component {
             </div>
           </div>
         </Card>
-        <CardContainer name="常见科学实验" flexType="space-around">
+        <CardContainer name="常见科学实验" flexType="space-between">
           {testData.map((item, index) => (
             <Card
               key={index}
@@ -94,23 +92,29 @@ class Scientice extends React.Component {
             </Card>
           ))}
         </CardContainer>
-        <CardContainer name="科研快讯" flexType="space-around">
+        <CardContainer name="科研快讯" flexType="space-between">
           <Card
             hoverable
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            cover={<img src={require("../../../assets/images/ky2.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              中国科研国际合作程度持续提升——访中国工程院...-清华大学新闻网
+              德政府报告：德国教育和科研国际合作不断加深 上海热线
+              韩国国防科学研究所发生爆炸事故 致1死5伤 中国法院网
+              受糖尿病血管并发症影响最大的女性 …..生物帮
+            </div>
+          </Card>
           <Card
             hoverable
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
-          <Card
-            hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
-          <Card
-            hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            cover={<img src={require("../../../assets/images/ky1.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              化疗耐药三阴性乳腺癌中的凋亡蛋白----BIO1000.COM
+              癌症干细胞的新生物标记------- BIO1000.COM
+            </div>
+          </Card>
         </CardContainer>
         <CardContainer name="科研专题" flexType="space-around">
           <Card
