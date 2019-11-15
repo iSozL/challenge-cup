@@ -116,23 +116,59 @@ class Scientice extends React.Component {
             </div>
           </Card>
         </CardContainer>
-        <CardContainer name="科研专题" flexType="space-around">
+        <CardContainer name="科研专题" flexType="space-between">
           <Card
             hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            style={{ width: 300, margin: "20px 10px 0 20px" }}
+            cover={<img src={require("../../../assets/images/zt1.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              国家科学技术奖为奖励在科技进步活动中作出突出贡献的公民….
+              诺贝尔奖（The Nobel Prize），是以瑞典的著名化学家….
+              爱因斯坦科学奖（The “Albert Einstein” World Award of
+              Science）以科学家阿尔伯特…
+              路易莎·格罗斯·霍维茨奖，这个奖项是为了表彰在生物…
+              沃尔夫奖是1976年1月1日，R.沃尔夫（Ricardo
+              Wolf）及其家族捐献一千万美元….
+              ,挑战杯是“挑战杯”全国大学生系列科技学术竞赛的简称，是由共青团中央、中国科协…
+            </div>
+          </Card>
           <Card
             hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            style={{ width: 300, margin: "20px 10px 0 20px" }}
+            cover={<img src={require("../../../assets/images/zt2.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              《科技进步与对策》
+              《科技进步与对策》期刊荣誉为：中科双百期刊;全国优秀科技期刊 ...
+              Chinese Medical Journal 《Chinese Medical
+              Journal》1992、1997年连续两年荣获全国优秀科技期刊和中国科协优秀科技期刊一等奖 ...；
+              《World Journal
+              ofGastroenterology》期刊荣誉：国家期刊奖百种重点期刊(第二第三届）...
+              《nternational Journal of Oral
+              Science》四川大学主办的口腔医学专业英文版学术期刊 ...
+              《Biomedical and Environmental
+              Sciences》...
+            </div>
+          </Card>
           <Card
             hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            style={{ width: 300, margin: "20px 10px 0 20px" }}
+            cover={<img src={require("../../../assets/images/zt3.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              暂无
+            </div>
+          </Card>
           <Card
             hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-          ></Card>
+            style={{ width: 300, margin: "20px 10px 0 20px" }}
+            cover={<img src={require("../../../assets/images/zt4.png")} />}
+          >
+            <div style={{ fontSize: "12px" }}>
+              实验室“生存”指南 清洗仪器 Wb实验秘籍
+            </div>
+          </Card>
         </CardContainer>
       </div>
     );
