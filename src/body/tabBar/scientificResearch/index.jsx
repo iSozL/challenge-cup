@@ -8,6 +8,9 @@ const { Meta } = Card;
 const { Sider, Content } = Layout;
 class Scientice extends React.Component {
   render() {
+    const photoArray = [
+      {name: require("../../../assets/images/s1.png")},
+    ];
     const testData = [
       {
         img: require("../../../assets/images/promotion4.png"),
@@ -40,14 +43,26 @@ class Scientice extends React.Component {
         description: "xxxxxxxx"
       }
     ];
+
+    const siderPhoto = [
+      {
+        name: require('../../../assets/images/s2.png')
+      },
+      {
+        name: require('../../../assets/images/s3.png')
+      },
+      {
+        name: require('../../../assets/images/s4.png')
+      }
+    ]
     return (
       <div>
         <Layout>
           <Content>
-            <IndexPhoto />
+            <IndexPhoto photoArray={photoArray} />
           </Content>
           <Sider width={270}>
-            <SiderPhoto />
+            <SiderPhoto siderPhoto={siderPhoto} />
           </Sider>
         </Layout>
         <Card style={{ marginTop: "20px" }}>
