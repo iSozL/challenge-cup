@@ -8,6 +8,7 @@ import Recruitment from './recruitment/index'
 import Forum from './forum/index'
 import Activities from './activities/index'
 import Training from './training/training'
+import About from './about/index'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -40,6 +41,10 @@ class TabBar extends React.Component {
         name: "论坛",
         jsx: <Forum />
       },
+      {
+        name: "关于我们",
+        jsx: <About />
+      }
     ];
     return (
       <div className="tab">
