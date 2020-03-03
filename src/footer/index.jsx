@@ -32,26 +32,26 @@ function Footer() {
   ];
   const expressData = [
     {
-      name: '帮助中心',
-      detail: ['入驻指南', '下单指南', '入驻协议']
+      name: '关于我们',
+      detail: ['联系我们', '法律援助', '加入我们']
     },
     {
-      name: '支付/配送方式',
-      detail: ['支付方式', '配送方式', '关于送货和验货']
+      name: '实验宝库',
+      detail: ['用户服务中心', '了解实验室', '实验指导']
     },
     {
-      name: '服务条款',
-      detail: ['网站使用条款', '会员注册协议', '隐私保护政策']
+      name: '课程中心',
+      detail: ['直播课程通道', '课程评价']
     },
     {
-      name: '公司简介',
-      detail: ['关于我们', '联系客服', '招商中心']
-    }
+      name: '临床接轨',
+      detail: ['影像成片库', '病历库', '医生简介']
+    },
   ]
   return (
     <div>
-      <Divider style={{ height: "3px" }} />
-      <div className="footer-container">
+      {/* <Divider style={{ height: "3px" }} /> */}
+      {/* <div className="footer-container">
         <div className="footer-container footer-width">
           {tagsData.map(
             (item,index) => (
@@ -65,7 +65,7 @@ function Footer() {
             )
           )}
         </div>
-      </div>
+      </div> */}
       <Divider style={{ height: "3px" }} />
       <div className="footer-container">
         <div className="footer-container footer-width">

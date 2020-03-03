@@ -14,7 +14,9 @@ class Body extends React.Component {
           <KeyWords />
         </div>
         <div className="tab-width">
-          <TabBar />
+          <div className="tab-bar">
+            <TabBar />
+          </div>
         </div>
         <Footer />
       </div>

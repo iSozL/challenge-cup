@@ -3,33 +3,34 @@ import NavigatorBar from "./navigatorBar";
 import IndexPhoto from "./indexPhoto";
 import SiderPhoto from "./siderPhoto";
 import { Layout } from "antd";
+import './index.css'
 
 const { Sider, Content } = Layout;
 class HeaderBar extends React.Component {
   render() {
     const photoArray = [
-      { name: require("../../../../assets/images/1.png") },
-      { name: require("../../../../assets/images/2.png") },
-      { name: require("../../../../assets/images/3.png") },
-      { name: require("../../../../assets/images/4.png") },
-      { name: require("../../../../assets/images/5.png") }
+      { name: require("../../../../assets/images/gxsys.png") }
     ];
     const siderPhoto = [
       {
-        name: require("../../../../assets/images/sider1.png")
+        name: require("../../../../assets/images/ss1.png")
       },
       {
-        name: require("../../../../assets/images/sider2.png")
+        name: require("../../../../assets/images/ss2.png")
       },
       {
-        name: require("../../../../assets/images/sider3.png")
+        name: require("../../../../assets/images/ss3.png")
+      },
+      {
+        name: require("../../../../assets/images/ss4.png")
       }
     ];
     return (
+      <div className="bar">
       <Layout>
-        <Sider width={150}>
+        {/* <Sider width={150}>
           <NavigatorBar />
-        </Sider>
+        </Sider> */}
         <Content>
           <IndexPhoto photoArray={photoArray} />
         </Content>
@@ -37,6 +38,7 @@ class HeaderBar extends React.Component {
           <SiderPhoto siderPhoto={siderPhoto} />
         </Sider>
       </Layout>
+      </div>
     );
   }
 }

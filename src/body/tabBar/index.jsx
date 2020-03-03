@@ -14,7 +14,7 @@ class TabBar extends React.Component {
   render() {
     const data = [
       {
-        name: "首页",
+        name: "主页",
         jsx: <Index />
       },
       {
