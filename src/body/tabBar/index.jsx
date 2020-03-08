@@ -9,6 +9,7 @@ import Forum from './forum/index'
 import Activities from './activities/index'
 import Training from './training/training'
 import About from './about/index'
+import Shared from './shared/index.tsx'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -18,8 +19,8 @@ class TabBar extends React.Component {
         jsx: <Index />
       },
       {
-        name: "商家介绍",
-        jsx: <Introduction />
+        name: "共享实验室",
+        jsx: <Shared />
       },
       {
         name: "活动专区",

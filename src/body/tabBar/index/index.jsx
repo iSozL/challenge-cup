@@ -7,9 +7,10 @@ import Point from './point/index'
 import Talk from './talk/index'
 class Index extends React.Component {
   render() {
+    const photos = [{ name: require("../../../assets/images/gxsys.png") }]
     return(
       <div className="index-container">
-        <HeaderBar />
+        <HeaderBar photoArray={photos}/>
         <Share />
         <Point />
         <Talk />

@@ -7,10 +7,11 @@ import './index.css'
 
 const { Sider, Content } = Layout;
 class HeaderBar extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
-    const photoArray = [
-      { name: require("../../../../assets/images/gxsys.png") }
-    ];
+    
     const siderPhoto = [
       {
         name: require("../../../../assets/images/ss1.png")
@@ -32,7 +33,7 @@ class HeaderBar extends React.Component {
           <NavigatorBar />
         </Sider> */}
         <Content>
-          <IndexPhoto photoArray={photoArray} />
+          <IndexPhoto photoArray={this.props.photoArray} />
         </Content>
         <Sider width={270}>
           <SiderPhoto siderPhoto={siderPhoto} />
