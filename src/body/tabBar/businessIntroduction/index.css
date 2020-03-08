@@ -66,3 +66,9 @@
   width: 100%;
   flex-wrap: wrap;
 }
+.ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}

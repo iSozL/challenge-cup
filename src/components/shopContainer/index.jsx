@@ -11,16 +11,18 @@ class ShopContainer extends React.Component {
               <div className="company-detail">
                 <div>
                   {item.name}
-                  <Icon type="taobao-circle" className="shopName" />
+                  {/* <Icon type="taobao-circle" className="shopName" />
                   <Icon type="qq" className="shopName" />
-                  <Icon type="alipay" className="shopName" />
+                  <Icon type="alipay" className="shopName" /> */}
                 </div>
+                <div className="shopDetail">实验类别 {item.lb}</div>
                 <div className="shopDetail">简介 {item.introduction}</div>
-                <div className="shopDetail">主管 {item.manager}</div>
+                <div className="shopDetail">主要负责老师 {item.manager}</div>
                 <div className="shopDetail">
-                  <span>公司 {item.company}</span>
-                  <span>成交 {item.success}</span>
-                  <span>好评率 {item.rate}</span>
+                  人员要求: 无
+                </div>
+                <div className="shopDetail">
+                  <span>地点 {item.company}</span>
                 </div>
               </div>
               <div>
@@ -32,12 +34,12 @@ class ShopContainer extends React.Component {
                       marginBottom: "10px"
                     }}
                   >
-                    进入店铺
+                    报名
                   </Button>
                 </div>
                 <div>
                   <Button style={{ background: "#87cefa", color: "#1E90FF" }}>
-                    联系我们
+                    联系
                   </Button>
                 </div>
               </div>

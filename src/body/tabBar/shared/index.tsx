@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../index/headerBar/index'
 import './index.css'
 import { Layout } from 'antd'
-const { Sider, Content } = Layout 
+import Shops from '../businessIntroduction/shopTabs/index'
+import Recommand from '../businessIntroduction/recommend'
+const { Sider, Content } = Layout;
 interface Iprops {
 
 }
@@ -67,9 +69,16 @@ const Shared: React.FC<Iprops> = props => {
       <Header photoArray={photos} />
       <Layout>
         <Content>
-          <List />
+          {/* <List /> */}
+          <div style={{border: '5px solid gold', borderRadius: '10px'}}>
+            <Shops />
+          </div>
         </Content>
-        <Sider width={270}></Sider>
+        <Sider width={270} style={{marginTop: "20px", background: '#f0f2f5'}}>
+          <div>
+            <Recommand />
+          </div>
+        </Sider>
       </Layout>
     </div>
   )

@@ -10,7 +10,8 @@ class ShopTabs extends React.Component {
       shops: [
         {
           key: '1',
-          name: '江西XX有限公司',
+          name: 'XXX老师的实验室',
+          lb: '生理',
           introduction: '无',
           manager: '小明',
           company: '江西南昌',
@@ -19,7 +20,8 @@ class ShopTabs extends React.Component {
         },
         {
           key: '2',
-          name: '江西XX有限公司',
+          name: 'XXX老师的实验室',
+          lb: '病理',
           introduction: '无',
           manager: '小明',
           company: '江西南昌',
@@ -28,7 +30,8 @@ class ShopTabs extends React.Component {
         },
         {
           key: '3',
-          name: '江西XX有限公司',
+          name: 'XXX老师的实验室',
+          lb: '微生物',
           introduction: '无',
           manager: '小明',
           company: '江西南昌',
@@ -37,7 +40,8 @@ class ShopTabs extends React.Component {
         },
         {
           key: '4',
-          name: '江西XX有限公司',
+          name: 'XXX老师的实验室',
+          lb: '寄生虫',
           introduction: '无',
           manager: '小明',
           company: '江西南昌',
@@ -46,7 +50,8 @@ class ShopTabs extends React.Component {
         },
         {
           key: '5',
-          name: '江西XX有限公司',
+          name: 'XXX老师的实验室',
+          lb: '影像',
           introduction: '无',
           manager: '小明',
           company: '江西南昌',
@@ -55,7 +60,7 @@ class ShopTabs extends React.Component {
         }
       ],
       showShops: [],
-      size: 3
+      size: 5
     }
     this.getIndex = this.getIndex.bind(this)
   }
@@ -74,30 +79,36 @@ class ShopTabs extends React.Component {
   render() {
     const shopData = [
       {
-        name: '所有店铺'
+        name: '动物实验'
       },
       {
-        name: '普通店铺'
+        name: '细胞实验'
       },
-      {
-        name: '专营店铺'
-      },
-      {
-        name: '旗舰店铺'
-      }
     ]
     const rankData = [
       {
-        name: '综合'
+        name: '病理'
       },
       {
-        name: '好评率'
+        name: '生化'
       },
       {
-        name: '等级'
+        name: '生理'
       },
       {
-        name: '所在地'
+        name: '病生'
+      },
+      {
+        name: '微生物'
+      },
+      {
+        name: '寄生虫'
+      },
+      {
+        name: '药理'
+      },
+      {
+        name: '影像'
       }
     ]
     return (
