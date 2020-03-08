@@ -1,0 +1,14 @@
+.list {
+  border: 5px solid rgb(173, 119, 119);
+  border-radius: 10px;
+}
+.item-name {
+  display: inline-block;
+  width: 100px;
+}
+.item {
+  padding: 0 10px
+}
+.list-items {
+  padding: 0 0 10px 0;
+}
