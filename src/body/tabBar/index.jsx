@@ -23,7 +23,7 @@ class TabBar extends React.Component {
         jsx: <Shared />
       },
       {
-        name: "活动专区",
+        name: "医学看点",
         jsx: <Activities />
       },
       {

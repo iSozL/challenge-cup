@@ -70,7 +70,7 @@ const Shared: React.FC<Iprops> = props => {
       <Layout>
         <Content>
           {/* <List /> */}
-          <div style={{border: '5px solid gold', borderRadius: '10px'}}>
+          <div style={{border: '5px solid gold', borderRadius: '10pxl'}}>
             <Shops />
           </div>
         </Content>
