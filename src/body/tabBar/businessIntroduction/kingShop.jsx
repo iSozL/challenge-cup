@@ -20,8 +20,10 @@ function KingProduct(props) {
       >
         <Meta
           title={props.name}
-          description="This is the description"
         />
+        <div style={{marginTop: "20px"}}>
+          {props.des}
+        </div>
       </Card>
     </div>
   );
@@ -39,11 +41,23 @@ function KingShop() {
             flexWrap: 'wrap'
           }}
         >
-          <KingProduct name="实验操作手册" img={require('../../../assets/images/111.png')} />
+          <KingProduct name="实验操作手册" img={require('../../../assets/images/111.png')} des={
+<div><p>离我最近:定位我附近的实验室</p>
+<p>最新:A博导受邀入驻我平台</p>
+<p>最热:江西省新型实验室标准入选名单}</p></div>}></KingProduct>
           <KingProduct name="今日看点" />
-          <KingProduct name="临床诊断案例" img={require('../../../assets/images/222.png')} />
+          <KingProduct name="临床诊断案例" img={require('../../../assets/images/222.png')} des={
+            <div><p>核酸检测阴性不能排除新冠感染！</p>
+            <p>长达十年直肠癌患者自述诊治经过，悔不当初。</p></div>
+          } />
           <KingProduct />
-          <KingProduct name="生活小贴士" img={require('../../../assets/images/333.png')} />
+          <KingProduct name="生活小贴士" img={require('../../../assets/images/333.png')} des={
+            <div>
+              <p>不想节食？怎么减肥？一招告诉你</p>
+              <p>经常流鼻涕不见好，你以为只是感冒吗？</p>
+              <p>想要预防冻疮，避免温度极速变化才是关键！</p>
+            </div>
+          } />
           <KingProduct />
         </div>
       </div>
