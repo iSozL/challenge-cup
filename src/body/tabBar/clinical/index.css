@@ -1,0 +1,10 @@
+.cl-item-name {
+  display: inline-block;
+  width: 100px;
+}
+.cl-item {
+  padding: 0 10px
+}
+.cl-list-items {
+  padding: 0 0 10px 0;
+}

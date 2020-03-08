@@ -8,49 +8,80 @@ const { Meta } = Card;
 const { Sider, Content } = Layout;
 class Scientice extends React.Component {
   render() {
-    const photoArray = [{ name: require("../../../assets/images/s1.png") }];
+    const photoArray = [
+      {
+        name: require("../../../assets/images/tpj1-1.png")
+      },
+      {
+        name: require("../../../assets/images/tpj1-2.png")
+      },
+      {
+        name: require("../../../assets/images/tpj1-3.png")
+      },
+      {
+        name: require("../../../assets/images/tpj1-4.png")
+      }
+    ];
     const testData = [
+      // {
+      //   img: require("../../../assets/images/sy1.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // },
+      // {
+      //   img: require("../../../assets/images/sy2.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // },
+      // {
+      //   img: require("../../../assets/images/sy3.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // },
+      // {
+      //   img: require("../../../assets/images/sy4.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // },
+      // {
+      //   img: require("../../../assets/images/sy5.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // },
+      // {
+      //   img: require("../../../assets/images/sy6.png"),
+      //   title: "XXXXX",
+      //   description: "xxxxxxxx"
+      // }
       {
-        img: require("../../../assets/images/sy1.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
+        src: require("../../../assets/images/tpj2-1.png")
       },
       {
-        img: require("../../../assets/images/sy2.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
+        src: require("../../../assets/images/tpj2-2.png")
       },
       {
-        img: require("../../../assets/images/sy3.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
+        src: require("../../../assets/images/tpj2-3.png")
       },
       {
-        img: require("../../../assets/images/sy4.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
+        src: require("../../../assets/images/tpj2-4.png")
       },
       {
-        img: require("../../../assets/images/sy5.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
-      },
-      {
-        img: require("../../../assets/images/sy6.png"),
-        title: "XXXXX",
-        description: "xxxxxxxx"
+        src: require("../../../assets/images/tpj2-5.png")
       }
     ];
 
     const siderPhoto = [
       {
-        name: require("../../../assets/images/s2.png")
+        name: require("../../../assets/images/ss1.png")
       },
       {
-        name: require("../../../assets/images/s3.png")
+        name: require("../../../assets/images/ss2.png")
       },
       {
-        name: require("../../../assets/images/s4.png")
+        name: require("../../../assets/images/ss3.png")
+      },
+      {
+        name: require("../../../assets/images/ss4.png")
       }
     ];
     return (
@@ -64,9 +95,9 @@ class Scientice extends React.Component {
           </Sider>
         </Layout>
         <Card style={{ marginTop: "20px" }}>
-          <div style={{ fontSize: "20px" }}>基础实验</div>
+          <div style={{ fontSize: "20px" }}>其他热门课程</div>
           <div style={{ margin: "20px 0 0 20px" }}>
-            <div style={{ marginTop: "20px" }}>
+            {/* <div style={{ marginTop: "20px" }}>
               热门实验: 蛋白质免疫印迹 / 蛋白质定量实验 / 聚合酶链式反应 /
               细胞冻存与复苏 / 酶联免疫吸附实验
             </div>
@@ -77,23 +108,24 @@ class Scientice extends React.Component {
             <div style={{ marginTop: "20px" }}>
               动物实验: 转基因小鼠制备实验 / 动物DNA提取实验 /
               新生大鼠心肌细胞原代培养实验
-            </div>
+            </div> */}
           </div>
         </Card>
-        <CardContainer name="常见科学实验" flexType="space-between">
+        <CardContainer name="专题课程讲座" flexType="space-between">
           {testData.map((item, index) => (
-            <Card
-              key={index}
-              hoverable
-              style={{ width: 240, margin: "20px 20px 0 20px" }}
-              cover={<img alt="example" src={item.img} />}
-            >
-              <Meta title={item.title} description={item.description} />
-            </Card>
+            // <Card
+            //   key={index}
+            //   hoverable
+            //   style={{ width: 240, margin: "20px 20px 0 20px" }}
+            //   cover={<img alt="example" src={item.img} />}
+            // >
+            //   <Meta title={item.title} description={item.description} />
+            // </Card>
+            <img src={item.src} alt="failed" style={{width: 150, height: 200, marginTop: "20px"}} />
           ))}
         </CardContainer>
-        <CardContainer name="科研快讯" flexType="space-between">
-          <Card
+        <CardContainer name="会诊视频" flexType="space-around">
+          {/* <Card
             hoverable
             style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
             cover={<img src={require("../../../assets/images/ky2.png")} />}
@@ -104,19 +136,18 @@ class Scientice extends React.Component {
               韩国国防科学研究所发生爆炸事故 致1死5伤 中国法院网
               受糖尿病血管并发症影响最大的女性 …..生物帮
             </div>
-          </Card>
+          </Card> */}
+          <img src={require('../../../assets/images/hz.png')} alt="failed" style={{width: 500, height: 300}} /> 
           <Card
             hoverable
-            style={{ width: 240, height: 300, margin: "20px 10px 0 20px" }}
-            cover={<img src={require("../../../assets/images/ky1.png")} />}
+            style={{ width: 240, height: 240, margin: "20px 10px 0 20px" }}
           >
             <div style={{ fontSize: "12px" }}>
-              化疗耐药三阴性乳腺癌中的凋亡蛋白----BIO1000.COM
-              癌症干细胞的新生物标记------- BIO1000.COM
+              多科会诊
             </div>
           </Card>
         </CardContainer>
-        <CardContainer name="科研专题" flexType="space-between">
+        {/* <CardContainer name="科研专题" flexType="space-between">
           <Card
             hoverable
             style={{ width: 300, margin: "20px 10px 0 20px" }}
@@ -169,7 +200,7 @@ class Scientice extends React.Component {
               实验室“生存”指南 清洗仪器 Wb实验秘籍
             </div>
           </Card>
-        </CardContainer>
+        </CardContainer> */}
       </div>
     );
   }

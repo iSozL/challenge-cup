@@ -10,6 +10,7 @@ import Activities from './activities/index'
 import Training from './training/training'
 import About from './about/index'
 import Shared from './shared/index.tsx'
+import Clinical from './clinical/index.tsx'
 const { TabPane } = Tabs;
 class TabBar extends React.Component {
   render() {
@@ -27,17 +28,17 @@ class TabBar extends React.Component {
         jsx: <Activities />
       },
       {
-        name: "科研专区",
+        name: "教学共享",
         jsx: <Scientice />
       },
       {
-        name: "实验室招聘",
-        jsx: <Recruitment />
+        name: "临床接轨",
+        jsx: <Clinical />
       },
-      {
-        name: "实验室培训",
-        jsx: <Training />
-      },
+      // {
+      //   name: "实验室培训",
+      //   jsx: <Training />
+      // },
       {
         name: "论坛",
         jsx: <Forum />
